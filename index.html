@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="This app for madinet alluhum">
+    <title>madinat alluhum</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normilize.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="icon" href="img/special-design.png"> -->
+    <link rel="icon" href="img/madinet-alluhum.jpeg">
+    <!-- -----------------laefet labirary------------------- -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+<body>
+    <button id="myBtn">&#8593;</button>
+    <!-- Start Settings-Box -->
+    <div class="settings-box">
+        <div class="toggle-settings">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="settings-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#ff9800"></li>
+                    <li data-color="#e91e63"></li>
+                    <li data-color="#009688"></li>
+                    <li data-color="#03a9f4"></li>
+                    <li data-color="#4caf59"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4>Random Background</h4>
+                <div class="random-backgrounds">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+            <div class="option-box">
+                <h4>Show Bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active" data-display="show">Yes</span>
+                    <span class="no" data-display="hide">No</span>
+                </div>
+            </div>
+            <button class="rest-options">Rest Options</button>
+        </div>
+    </div>
+    <!-- End Settings-Box -->
+    <!-- Start Nav-Bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section=".landing">
+            <div class="tooltip">Lainding</div>
+        </div>
+        <div class="bullet" data-section=".insights">
+            <div class="tooltip">About Us</div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip">Our Gallery</div>
+        </div>
+        <div class="bullet" data-section=".industries">
+            <div class="tooltip">Project Visit</div>
+        </div>
+        <div class="bullet" data-section=".team">
+            <div class="tooltip">Team Members</div>
+        </div>
+        <div class="bullet" data-section=".stats">
+            <div class="tooltip">Stats</div>
+        </div>
+        <div class="bullet" data-section=".footer">
+            <div class="tooltip">Contact Us</div>
+        </div>
+    </div>
+    <!-- End Nav-Bullets -->
+    
+    <!-- Start Landing -->
+    <div class="landing">
+        <div class="header-area" >
+        <div class="container" >
+                <div class="logo"><img src="img/madinet-alluhum.jpeg" alt="madinet-alluhum"></div>
+               <div class="links-container">
+                <ul class="main-nav links">
+                    <li><a href="#" data-section=".insights">About Us</a></li>
+                    <li><a href="#" data-section=".gallery">Gallery</a></li>
+                    <li><a href="#" data-section=".industries">project Visit</a></li>
+                    <li><a href="#" data-section=".team">Team Members</a></li>
+                    <li><a href="#" data-section=".stats">Stats</a></li>
+                    <li><a href="#" data-section=".footer">Contact Us</a></li>        
+                </ul>
+                <button class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Landing -->
+   <!-- Start insights -->
+   <div class="insights">
+    <div class="container">
+    <div class="info-box">
+        <h2 class="main-title">About Us</h2>
+        <p><span>Introduction</span>
+          With a capacity of more than 21,000 calves, the NewCold calf breeding and fattening project is the largest of the strategic projects in the Kurdistan Region of Iraq.
+          In Zakho and Erbil, the project supplies special slaughter to local markets.
+          It is the first project in the colleges to supply the local market with high-quality red meat at a reasonable price.
+          The slaughterhouse has a daily capacity of more than 140 calves and more than 400 sheep per day and can slaughter large animals (sheep and calves).
+          Location of the project
+          It is located north of Dohuk, Samayl district, opposite Batil, Kilak village, in the Kurdistan Region of Iraq.
+          For this project, 145 Iraqi dunums of land were allocated. Director and commissioner of New Cold Company, Mr. Ghaidan Nizar Saadoun owns the land.
+          There were 71 dunams of basic area (177,500 square meters) devoted to the project.
+          Project origins:
+          1-Educational halls have capacity for 21,600 calves in 8 halls.
+          2-Special slaughterhouse for the project, with a daily slaughter capacity of 140 calves and 400 sheep.
+          3-The halls and stores for file number 4.
+          4-The administration building.
+          5-A veterinary clinic with private rooms for veterinarians and doctors.
+          6-Laboratories dedicated to specific projects.
+          7-Animals can be held in an emergency hall.
+          8-Housing for 4 workers.
+          9-Special administrationFor the massacre.
+          10-Over 50-ton scale for the project, Suitable for weighing cases up to 5000 kg on a small scale.
+        </p>
+        <p><span>Who We are</span> 
+          A calf breeding and fattening project with a capacity of 21,000 calves is the largest of the strategic projects in Kurdistan.
+        </p>
+        <p><span>What we do</span>  
+          The company's Managing Director is Ghassan Nizar Saadoun
+          Managing Director and Sales Director, Ghaidan Nizar Saadoun
+          Executive Director, Sakban Nizar Saadoun
+          Intl. Adnan Ahmed Abdullah / Director of Public Relations and General Manager of Projects
+          Palm Khas Jazra's Administrative Director
+          A total of 6 veterinarians and doctors
+          A total of five accountants
+          A total of 5 caregivers
+          Educational materials workers: 25
+          The massacre involved 20 workers and butchers
+          Machine market specializations10
+          A team of three cooks
+        </p>
+        <p><span>Workers on the project</span>  
+          Place where calves and sheep can be slaughtered daily with high quality, with administration buildings, physicians, veterinarians, and specialized laboratories.
+        </p>
+        <p><span>Where is our location </span> 
+          The village is located in the Kurdistan Region of Iraq north of Dohuk, in the Samayl district, opposite Batil, Kilak village
+        </p>
+        <div class="image-box">
+            <video src="img/madinat-alluhum.MP4" width="1000px" controls ></video>
+        </div>
+    </div>
+    
+</div>
+</div>
+<!-- End insights -->
+     <!-- Start Gallery -->
+     <div class="gallery">
+         <div class="container">
+             <h2 class="main-title">Our Gallery</h2>
+             <div class="images-box">
+                 <img src="img/m1.webp" alt="image Three" data-aos="zoom-in">
+                 <img src="img/m12.webp" alt="image Tow" data-aos="zoom-in">
+                 <img src="img/m3.webp" alt="image Four" data-aos="zoom-in">
+                 <img src="img/m4.webp" alt="image Five" data-aos="zoom-in">
+                 <img src="img/m5.webp" alt="image six" data-aos="zoom-in">
+                 <img src="img/m6.webp" alt="image seven" data-aos="zoom-in">
+                 <img src="img/m7.webp" alt="image eight" data-aos="zoom-in">
+                 <img src="img/m8.webp" alt="image eight" data-aos="zoom-in">
+                 <img src="img/m9.webp" alt="image eight" data-aos="zoom-in">
+                 <img src="img/m10.webp" alt="image eight" data-aos="zoom-in">
+              
+             </div>
+         </div>
+     </div>
+     <!-- End Gallery -->
+     <!-- Start industries -->
+    <div class="industries">
+      <div class="container">
+        <h2 class="main-title">Project Visits</h2>
+          <div class="industries-content">
+              <div class="left" data-aos="zoom-in">
+                  <div class="content">
+                      <h3>Madinet-Alluhum</h3>
+                      <p>Visit of the Director of Livestock in Nineveh Governorate Agriculture with his accompanying delegationVisit of the Director of Livestock in Nineveh Governorate Agriculture with his accompanying delegation</p>
+                      <img src="img/photo1.jpeg" alt="photo1">
+                  </div>
+              </div>
+              <div class="right" data-aos="zoom-in">
+                  <div class="content">
+                      <h3>Madinet-Alluhum</h3>
+                      <p>The visit of the Messrs. Director of Smil Agriculture, Director of Batel Agriculture, and Director of Fayda Agriculture to the project. We thank them for this wonderful and fruitful visit to our project, madinet alluhum, represented by its director, the respected Mr. Ghassan Nizar Saadoun.A representative of organized crime in Nineveh Governorate visited the project with Dr. Ali, Sheikhan Veterinary Director, multiple visits to the project</p>
+                      <img src="img/photo2.jpeg" alt="photo2">
+                  </div>
+              </div>
+              <div class="left" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>Multiple visits by students of the College of Agriculture, University of Dohuk, Department of Animal Production for the project</p>
+                      <img src="img/photo3.jpeg" alt="photo3">    
+                  </div>
+             </div>
+             <div class="right" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>Visit of the students of the College of Veterinary Medicine, University of Dohuk to the project
+                      </p>
+                      <img src="img/photo4.jpeg" alt="photo4">
+                 </div>
+             </div>
+             <div class="left" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>The visit of the Minister of Agriculture in the region to the project</p>
+                      <img src="img/photo5.jpeg" alt="photo5">
+                 </div>
+             </div>
+             <div class="right" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>The Director General of Agriculture in Dohuk and the Director of Livestock visited several times to the projectVisit of the students of the College of Veterinary Medicine, University of Dohuk to the project
+                      </p>
+                      <img src="img/photo6.jpeg" alt="photo6">
+                 </div>
+             </div>
+             <div class="left" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>A visit to Ms. Rozan, a member of the Kurdistan Parliament, with the district director and the director of agriculture, Batel
+                      </p>
+                      <img src="img/photo7.jpeg" alt="photo7">
+                 </div>
+             </div>
+             <div class="right" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>A representative of organized crime in Nineveh Governorate visited the project with Dr. Ali, Sheikhan Veterinary Director, multiple visits to the project
+                      </p>
+                      <img src="img/photo8.jpeg" alt="photo8">
+                 </div>
+             </div>
+             <div class="left" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>Multiple visits to the Dohuk Veterinary and Agriculture Committee
+                      </p>
+                      <img src="img/photo9.jpeg" alt="photo9">
+                 </div>
+             </div>
+             <div class="right" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>Visits by various delegations to the project
+                      </p>
+                      <img src="img/photo10.jpeg" alt="photo10">
+                 </div>
+             </div>
+             <div class="left" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>Interviews with satellite channels, including Rudaw TV
+                      </p>
+                      <img src="img/photo11.jpeg" alt="photo11">
+                 </div>
+             </div>
+             <div class="right" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>Attending many conferences and activities as a representative of New Cold
+                      </p>
+                      <img src="img/photo12.jpeg" alt="photo12">
+                 </div>
+             </div>
+             <div class="left" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>With the Governors of Dohuk, Mr. Farhad Tetroshin and Dr. Ali Tatar
+                      </p>
+                      <img src="img/photo13.jpeg" alt="photo13">
+                 </div>
+             </div>
+             <div class="right" data-aos="zoom-in">
+                 <div class="content">
+                     <h3>Madinet-Alluhum</h3>
+                     <p>Opening of the Newcold project massacre
+                      </p>
+                      <img src="img/photo14.jpeg" alt="photo14">
+                 </div>
+             </div>
+             <div class="clearfix"></div>
+          </div>
+      </div>
+  </div>
+  <!-- End industries -->
+     <!-- Start Team -->
+    <div class="team" id="team">
+        <h2 class="main-title">Team Members</h2>
+        <div class="container">
+          <div class="box" data-aos="zoom-in">
+            <div class="data">
+              <img src="img/gasan.webp" alt="gasan" />
+              <div class="social">
+              </div>
+            </div>
+            <div class="info">
+              <h3>Ghassan Nizar Saadoun</h3>
+              <p>Managing Director of the company</p>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in">
+            <div class="data">
+              <img src="img/suzan.webp" alt="suzan" />
+              <div class="social">
+              </div>
+            </div>
+            <div class="info">
+              <h3>Suzan Waleed Aljboury</h3>
+              <p>Company Aministration</p>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in">
+            <div class="data">
+              <img src="img/sakban.webp" alt="sakban" />
+              <div class="social">
+              </div>
+            </div>
+            <div class="info">
+              <h3>Sakban Nizar Saadoun</h3>
+              <p>Executive Director</p>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in">
+            <div class="data">
+              <img src="img/dr.adnan.webp" alt="dr.adnan" />
+              <div class="social">
+              </div>
+            </div>
+            <div class="info">
+              <h3>Dr.Adnan Ahmed Abdullah</h3>
+              <p>General Supervisor of Projects and Director of Public Relations</p>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in">
+            <div class="data">
+              <img src="img/bahaa.webp" alt="bahaa" />
+              <div class="social">
+              </div>
+            </div>
+            <div class="info">
+              <h3>Bahaa Zuhair Muhammad</h3>
+              <p>Company Accountant</p>
+            </div>
+          </div>
+          <div class="box" data-aos="zoom-in">
+            <div class="data">
+              <img src="img/othman.webp" alt="othman" />
+              <div class="social">
+              </div>
+            </div>
+            <div class="info">
+              <h3>Othman Farouk Youssef</h3>
+              <p>Sub Accountant</p>
+            </div>
+          </div>
+        
+         
+        </div>
+      </div>
+      <!-- End Team -->
+    <!-- Start Stats -->
+    <div class="stats" id="stats">
+        <h2>Our Awesome Stats</h2>
+        <div class="container">
+          <div class="box">
+            <i class="far fa-user fa-2x fa-fw"></i>
+            <span class="number" data-goal="200">0</span>
+            <span class="text">Clients</span>
+          </div>
+          <div class="box">
+            <i class="fas fa-code fa-2x fa-fw"></i>
+            <span class="number" data-goal="1">0</span>
+            <span class="text">Projects</span>
+          </div>
+          <div class="box">
+            <i class="fas fa-globe-asia fa-2x fa-fw"></i>
+            <span class="number" data-goal="1">0</span>
+            <span class="text">Countries</span>
+          </div>
+          <div class="box">
+            <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
+            <span class="number" data-goal="1">0</span>
+            <span class="text">Website</span>
+          </div>
+        </div>
+      </div>
+      <!-- End Stats -->
+     <!-- Start Footer -->
+     <div class="footer">
+        <div class="container">
+          <div class="box">
+            <h3>Madinet Al Luhum</h3>
+            <ul class="social">
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text">
+              For inquiries, contact us on the following numbers or visit us at our website mentioned at the bottom of the page
+            </p>
+          </div>
+        
+          <div class="box">
+            <div class="line">
+              <i class="fas fa-map-marker-alt fa-fw"></i>
+              <div class="info">Iraq, Dhouk-Zakho Irqa-Kirshin Entrance Near Kilki Village</div>
+            </div>
+            <div class="line">
+              <i class="far fa-clock fa-fw"></i>
+              <div class="info">Business Hours: From 10:00 AM To 7:00 PM</div>
+            </div>
+            <div class="line">
+              <i class="fas fa-phone-volume fa-fw"></i>
+              <div class="info">
+                <span>+9647503900524</span>
+                <span>+9647700824472</span>
+              </div>
+            </div>
+            <div class="line">
+              <i class="fas fa-mail-bulk fa-fw"></i>
+              <div class="info">
+                <span>info@madinetalluhum.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div id="map"></div>
+          </div>
+          
+        </div>
+        <p class="copyright">copyright madinet-alluhum 2024</p>
+      </div>
+      <!-- End Footer -->
+
+    <script src="js/master.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 1200,
+            once: false
+        })
+    </script>
+</body>
+</html>
